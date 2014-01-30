@@ -1,0 +1,37 @@
+
+
+Approach:
+Made extensive use of procedure and function to provide code reuseability.
+Prior to computing the result of each task,I made a JDBC connection to the oracle Database as specified and populated the corresponding records of items and trans table and connection username and password.
+
+For Task1:
+1.created procedure "Task1" wherein I first calculated the distinct transcount.
+2.As mentioned in the lecture i made use of Data Manipulation statements and those were all written inside procedures.
+3.The procedure was designed such that i could get all itemid satisfiy the support condition.
+4.Using Simple java code i could thereby dump the output to a file.
+
+For Task2:
+1.Again made use of procedure and data manipulation statements.
+2.The result obtained were dumped in a table.In task2 we also needed to output of task1 so called task1 from here.
+3.Thereby the result was placed in 2 tables and then pasted the result in a file using a FileWriter.
+
+For Task3:
+1.Created dynamic tables required for task3 were created using a simple procedure(Here the size was of task3).
+2.First the procedure of task1 was called and thereby that result was used to compute the Candidate sets.
+3.The Candidate sets were then used to compute further frequent itemsets which satisfied the support value.
+4.Every frequent item from the frequent table which satisfied the support value was dumped to a file.
+
+For task4:
+1.Again built the frequent itemsets and candidates itemset as specified above but this time the size was of task4.
+2.For all the frequent sets,computed the possible permutuation(size=2 to size of task4).
+3.All the permutuated subset which satisfied the confidence were stored.
+
+Finally the appproapriate tables used were dropped.
+
+Difficulties faced and what i learned:
+1.Was finding it difficult to connect to oracle.cise.ufl database,but TA's PDF and disscussion on sakai was really helpful.
+2.I was not able to code and compile procedures properply but then professor's lecture on PL/SQL and PSM helped indeed.
+3.Found difficulty in Creating Dynamic table in procedure but then went through the Oracle API which definately gave an indepth understanding of Oracle Database and procedures.
+4.Efficient way to load records of items and trans into the appropriate table,disscussion on DB forum was helpful to execute them in batch files.
+
+
